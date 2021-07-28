@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pvh.lucifer.myappchiatiennuoc.tinhtiennuoc">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewChiSoNuocThangNay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="Chỉ số nước tháng này"
+                android:layout_centerVertical="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextChiSoTongThangNay"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:layout_centerVertical="true"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewChiSoNuocThangTruoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Chỉ số nước tháng trước"
+                android:textSize="14sp"
+                android:layout_alignBottom="@+id/editTextChiSoTongThangTruoc"/>
+
+            <EditText
+                android:id="@+id/editTextChiSoTongThangTruoc"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewChiSoNuocTriThangNay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Chỉ số nhà Trí tháng này"
+                android:textSize="14sp"
+                android:layout_alignBottom="@+id/editTextChiSoNhaTriThangNay"/>
+
+            <EditText
+                android:id="@+id/editTextChiSoNhaTriThangNay"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewChiSoNhaTriThangTruoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Chỉ số nhà Trí tháng trước"
+                android:textSize="14sp"
+                android:layout_alignBottom="@+id/editTextChiSoTriThangTruoc"/>
+
+            <EditText
+                android:id="@+id/editTextChiSoTriThangTruoc"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:layout_centerVertical="true"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textViewSoTienNuocThang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền nước tháng này"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_alignBottom="@+id/editTextTongTienNuoc"/>
+
+            <EditText
+                android:id="@+id/editTextTongTienNuoc"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền nước chú Trí là: "
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_alignBottom="@+id/textViewKetQua"/>
+
+            <TextView
+                android:id="@+id/textViewKetQua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <Button
+                android:id="@+id/buttonTinhTienNuoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Tính tiền nước"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textSize="14sp" />
+            <Button
+                android:layout_below="@+id/buttonTinhTienNuoc"
+                android:id="@+id/buttonSaveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Lưu chỉ số nước tháng này"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</FrameLayout>

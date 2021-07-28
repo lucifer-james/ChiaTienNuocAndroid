@@ -1,0 +1,169 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_Capnhatgia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pvh.lucifer.myappchiatiennuoc.capnhatdongia">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewDonGiaNuocDM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextDonGiaDM"
+                android:layout_marginTop="10dp"
+                android:text="Đơn giá nước trong định mức (đ):"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editTextDonGiaDM"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewDonGiaNuocNgoaiDM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextDonGiaNuocNgoaiDinhMuc"
+                android:layout_marginTop="10dp"
+                android:text="Đơn giá nước ngoài định mức (đ):"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editTextDonGiaNuocNgoaiDinhMuc"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewThue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextThue"
+                android:layout_marginTop="10dp"
+                android:text="Thuế giá trị gia tăng (%):"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editTextThue"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewPhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextPhi"
+                android:layout_marginTop="10dp"
+                android:text="Phí bảo vệ môi trường (%):"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editTextPhi"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewDinhMucKhoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextDinhMucKhoi"
+                android:layout_marginTop="10dp"
+                android:text="Định mức mỗi người (m3):"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editTextDinhMucKhoi"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewSoNguoiNhaMinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editTextSoNguoiTrongDinhMuc"
+                android:layout_marginTop="10dp"
+                android:text="Số người nhà mình trong định mức:"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editTextSoNguoiTrongDinhMuc"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                android:inputType="numberDecimal"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Cập nhật" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</FrameLayout>

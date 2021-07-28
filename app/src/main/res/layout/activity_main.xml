@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pvh.lucifer.myappchiatiennuoc.MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/backgroundtab"
+        app:tabMode="scrollable"
+        android:id="@+id/tbl_Main"
+        android:textAlignment="center"
+        app:tabIndicatorColor="@android:color/holo_orange_dark"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicatorHeight="2dp"
+        app:tabTextAppearance="@android:style/TextAppearance.DeviceDefault"
+        app:tabTextColor="@android:color/holo_blue_dark"
+        app:tabSelectedTextColor="@android:color/white">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/tbl_Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPagerMain">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag_Gioithieu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pvh.lucifer.myappchiatiennuoc.gioithieu">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Phần mềm chia tiền nước giữa 2 gia đình"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Phiên bản: 1.0.0"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Tác giả: Nguyễn Quốc Khang"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Địa chỉ: 1 Apple Park Way, Cupertino, CA 95014, U.S.A"
+            android:textSize="16dp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</FrameLayout>
